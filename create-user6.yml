@@ -1,0 +1,12 @@
+---
+
+- hosts: db
+  tasks:
+    - name: Create user{{ user }}
+      ansible.builtin.user:
+        name: "{{ user }}"
+        state: present
+      register: result
+
+    - ansible.builtin.debug:
+        var: result
