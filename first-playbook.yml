@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: Print message
+      debug: #모듈
+        msg: Hello Ansible World
