@@ -1,0 +1,8 @@
+[packages]
+web_package = httpd
+db_package = mariadb-server
+
+[users]
+user1 = ansible
+user2 = naleejang
+
